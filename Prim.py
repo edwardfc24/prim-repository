@@ -67,11 +67,12 @@ class Prim:
             print(vertices)
             # Recorremos las aristas para determinar el camino más eficiente a todos los nodos
             for edge in edges:
-                print(edge)
                     # String origin = edge[0];
                     # String destination = edge[1];
                     # int weight = edge[2];
                 origin, destination, weight = edge
+                origenes =False #origen
+                desinos =False #destino
                 # por cada vertice si que he guardado comparar con origen y destino
                     # comparo origen
                 for aux in vertices:
@@ -96,14 +97,15 @@ class Prim:
                     met.append(edge)
                     # eliminamos la arista puesta
                     edges.remove(edge)
-                    print(met)
                     # si entra pasa al caunter
-                    pass
+                    break
+                
+                    
+
 
                 # 
             # para que cumpla la condicion y-1    
             caunter-=1
-            print(caunter)
         return met
 
     # def review_edge(self, nodes, edges):
